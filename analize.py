@@ -4,9 +4,10 @@ import csv
 fills = []
 balances = {'LTC': 0, 'BTC': 0, 'BCH': 0, 'ETH': 0}
 np_buys = []
+csv_path = '/path/to/csv'
 
 print('##########STARTING RUN##########')
-with open('C:/Users/raluaces/Downloads/bch.csv') as csv_file:
+with open(csv_path) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     for row in csv_reader:
